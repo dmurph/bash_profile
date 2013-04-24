@@ -9,7 +9,6 @@ fi
 alias la='command ls -AlG'
 alias lc='command ls -lAcrG'
 alias lk='command ls -lASrG'
-alias llh='ll -h'
 alias lll='stat %a %N %G %U ${PWD}/*|sort'
 alias lr='command ls -lARG'
 alias lt='command ls -lAtrG'
