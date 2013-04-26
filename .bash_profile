@@ -17,7 +17,7 @@ alias lx='command ls -lAxBG'
 
 alias analyze_used_commands='cut -f1 -d" " ~/.bash_history | sort | uniq -c | sort -nr | head -n 30'
 
-if [ -f /usr/share/vim/vim73/macros/less.vim]; then
+if [ -f /usr/share/vim/vim73/macros/less.vim ]; then
 	alias vless='vim -u /usr/share/vim/vim73/macros/less.vim'
 fi
 
