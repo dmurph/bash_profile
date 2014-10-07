@@ -41,3 +41,13 @@ if [ -f ~/bash_profile/git-ps1.sh ]; then
 fi
 
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+
+if [ -f ~/google-cloud-sdk/path.bash.inc ]; then
+	# The next line updates PATH for the Google Cloud SDK.
+	source ~/google-cloud-sdk/path.bash.inc
+fi
+
+if [ -f ~/google-cloud-sdk/completion.bash.inc ]; then
+	# The next line enables bash completion for gcloud.
+	source ~/google-cloud-sdk/completion.bash.inc
+fi
