@@ -1,0 +1,16 @@
+export GOMA_DIR=${HOME}/goma
+export CHROME_SRC=${HOME}/cr-home/src
+export CHROME_DEVEL_SANDBOX=/usr/local/sbin/chrome-devel-sandbox
+export GYP_GENERATORS=ninja,eclipse
+export CR_HOME=${CHROME_SRC}
+export WK_HOME=${CHROME_SRC}/third_party/WebKit
+
+export CHROME_DEVEL_SANDBOX=/usr/local/sbin/chrome-devel-sandbox
+
+export PATH=${HOME}/depot_tools:${WK_HOME}/Tools/Scripts:${PATH}:${HOME}/crbuild
+
+source ~/crbuild/cr-alias
+
+GIT_PS1_PATH_SHORTENER['~/cr-home/src']='~cr'
+GIT_PS1_PATH_SHORTENER['third_party/WebKit']='~wk'
+

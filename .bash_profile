@@ -3,7 +3,7 @@ export PATH=/usr/local/sbin:$PATH
 
 if [ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]; then
 	source /usr/local/etc/bash_completion.d/git-prompt.sh
-	export PS1='\[\e[0;00m\]\h \[\e[0;32m\]$(__git_ps1 "[%s]") \[\e[01;36m\]\w \[\e[01;00m\]$\[\e[00m\] '
+#	export PS1='\[\e[0;00m\]\h \[\e[0;32m\]$(__git_ps1 "[%s]") \[\e[01;36m\]\w \[\e[01;00m\]$\[\e[00m\] '
 fi
 
 alias la='command ls -AlG'
@@ -40,14 +40,3 @@ if [ -f ~/bash_profile/git-ps1.sh ]; then
 	source ~/bash_profile/git-ps1.sh
 fi
 
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
-
-if [ -f ~/google-cloud-sdk/path.bash.inc ]; then
-	# The next line updates PATH for the Google Cloud SDK.
-	source ~/google-cloud-sdk/path.bash.inc
-fi
-
-if [ -f ~/google-cloud-sdk/completion.bash.inc ]; then
-	# The next line enables bash completion for gcloud.
-	source ~/google-cloud-sdk/completion.bash.inc
-fi
