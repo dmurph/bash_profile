@@ -1,0 +1,21 @@
+alias ccr='cd $CR_HOME'
+alias cwk='cd $WK_HOME'
+
+alias goma-start='${GOMA_DIR}/goma_ctl.py ensure_start'
+alias goma-restart='${GOMA_DIR}/goma_ctl.py restart'
+alias goma-stop='${GOMA_DIR}/goma_ctl.py stop'
+
+alias rcr='cd $CR_HOME && git rebase-update'
+alias rwk='cd $WK_HOME && git rebase-update'
+alias sd='gclient sync'
+alias asans='GYP_DEFINES='asan=1' gclient runhooks'
+
+alias rba='rwk && rcr'
+alias rbas='rba && sd'
+
+alias bb='ninja -j 1000 -k 1000 -C out/Debug'
+alias bdb='ninja -j 1000 -k 1000 -C out/Debug'
+alias br='ninja -j 1000 -k 1000 -C out/Release'
+
+alias realiascr='source ~/bash_profile/chromium_aliases'
+

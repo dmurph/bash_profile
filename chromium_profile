@@ -9,7 +9,7 @@ export CHROME_DEVEL_SANDBOX=/usr/local/sbin/chrome-devel-sandbox
 
 export PATH=${HOME}/depot_tools:${WK_HOME}/Tools/Scripts:${PATH}:${HOME}/crbuild
 
-source ~/crbuild/cr-alias
+source ~/bash_profile/chromium_aliases
 
 GIT_PS1_PATH_SHORTENER['~/cr-home/src']='~cr'
 GIT_PS1_PATH_SHORTENER['third_party/WebKit']='~wk'
