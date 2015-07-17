@@ -18,3 +18,5 @@ if [ -f ~/bash_profile/git-ps1.sh ]; then
 	source ~/bash_profile/git-ps1.sh
 fi
 
+GIT_PS1_HOST_SHORTENER[.corp.google.com]=""
+
