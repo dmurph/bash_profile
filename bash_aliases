@@ -20,4 +20,4 @@ alias .....="cd ../../../.."
 alias cd..='cd ..'
 
 alias realias='source ~/.bash_aliases'
-alias serve='python -m SimpleHTTPServer 8080'
+alias serve='python -m SimpleHTTPServer 8000'
