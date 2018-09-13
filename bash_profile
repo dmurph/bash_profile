@@ -26,7 +26,9 @@ if [ -f ~/bash_profile/git-ps1.sh ]; then
 	source ~/bash_profile/git-ps1.sh
 fi
 
+declare -A GIT_PS1_PATH_SHORTENER
 
-GIT_PS1_HOST_SHORTENER[.corp.google.com]=""
-GIT_PS1_PATH_SHORTENER[/google/src/cloud/dmurph]="~citc"
+GIT_PS1_HOST_SHORTENER[".corp.google.com"]=""
+GIT_PS1_PATH_SHORTENER["/google/src/cloud/dmurph"]="~citc"
 
+export GIT_PS1_PATH_SHORTENER;

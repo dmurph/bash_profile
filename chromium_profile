@@ -12,6 +12,6 @@ export PATH=${HOME}/depot_tools:${WK_HOME}/Tools/Scripts:${PATH}:${BK_HOME}/tool
 
 source ~/bash_profile/chromium_aliases
 
-GIT_PS1_PATH_SHORTENER['~/cr-home/src']='~cr'
-GIT_PS1_PATH_SHORTENER['third_party/WebKit']='~wk'
+GIT_PS1_PATH_SHORTENER["~/cr-home/src"]='~cr'
+GIT_PS1_PATH_SHORTENER["third_party/WebKit"]='~wk'
 
